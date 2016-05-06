@@ -1,0 +1,198 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/project/Public/css/zhuce.css">
+  <title>注册</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/project/Public/Home/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/project/Public/Home/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="/project/Public/Home/dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/project/Public/Home/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="/project/Public/Home/bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/project/Public/Home/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	      <div class="LineBg">
+	      </div>
+	      <div class="total">
+
+		      <div class="HeadLogo">
+		      		<div class="logo"></div>
+		      </div>
+
+			<form action="<?php echo U('Home/Zhuce/insert');?>" method="post">
+		      <!-- 中间部分 -->
+			  <div class="content">
+			      		<div class="c_top">
+			      			<a href="" class="w1">个人注册</a>
+			      			<span class="fgf">|</span>
+			      			<a href="" class="w2">企业注册</a>
+			      		</div>
+			      		<div class="c_all">
+				      		<div class="c_bottom">
+					      		<div class="info">
+					      			<div class="form">
+					      				<ul class="tips">
+					      					<li>官方认证类型包括：政府、企业、媒体、网站、应用、机构、公益、校园组织</li>
+					      					<li style="color:#E44443;">注意：非官方类用户，请直接在<a href="" target="">个人注册</a>处注册</li>
+					      				</ul>
+						      			<div class="list">
+						      				<div class="tit">
+						      					<span class="ico"></span>
+						      					<i>*</i>用户名：
+						      				</div>
+						      				<div class="inp">
+						      					<input class="input" name="username" type="text" readme="请输入6-16位字母数字下划线用户名" placeholder="输入用户名">
+						      				</div>
+						      				<div class="ts">
+						      					<span class="success1"></span>
+						      				</div>
+						      			</div>
+
+
+						      			<div class="list">
+						      				<div class="tit">
+						      					<i>*</i>密码：
+						      				</div>
+						      				<div class="inp">
+						      					<input class="input" name="password" readme="请输入6-16位字母数字下划线密码" placeholder="请输入密码" type="password">
+						      				</div>
+						      				<div class="ts">
+						      					<spanspan class="success2"></spanspan>
+						      				</div>
+						      			</div>
+
+
+						      			<div class="list">
+						      				<div class="tit">
+						      					<i>*</i>请再次输入密码：
+						      				</div>
+						      				<div class="inp">
+						      					<input class="input" name="repassword" type="password" readme="请确认密码" placeholder="请再次输入密码">
+						      				</div>
+						      				<div class="ts">
+						      					<span class="success3"></span>
+						      				</div>
+						      			</div>
+
+
+										<div class="list" style="display:none">
+						      				<div class="tit">您希望的微博名：</div>
+						      				<div class="inp">
+						      					<input class="input" name="" type="text" >
+						      				</div>
+						      				<div class="ts"></div>
+						      			</div>
+										<div class="list">
+						      				<div class="tit">
+						      					<i>*</i>验证码：
+						      				</div>
+											<div class="inp_code">
+						      					<input class="w_input"  name="yzm"  readme="请输入验证码" type="text" >
+						      					<a href=""><img src="" alt=""></a>
+						      					<img class="yzm" width="120px" src="<?php echo U('Home/Public/createVcode');?>" alt="" onclick="this.src=this.src+'?a'">
+						      				</div>
+						      				<div class="ts">
+						      					<span class="success4"></span>
+						      				</div>
+										</div>
+
+
+										<div class="submit">
+											<div class="inp">
+												<button class="btn" style="width:120px;height:35px;background:#FFB941;" >立即注册</button>
+											</div>
+										</div>
+										
+
+						</form>
+										<div class="list">
+											<div class="inp_code">
+												<p class="agrement">
+													<a href="" target="">微博服务使用协议</a>
+												</p>
+												<p class="agrement">
+													<a href="" target="">微博个人信息保护政策</a>
+												</p>
+												<p class="agrement">
+													<a href="" target="">全国人大常委会关于加强网络信息保护的决定</a>
+												</p>
+						      				</div>
+										</div>
+				      		        </div>
+				      		    </div>
+				      		    <div class="form_right">
+				      				<p class="p_line">
+				      					已有帐号，
+				      					<a href="" target="">直接登录»</a>
+				      				</p>
+									<p>微博注册帮助</p>
+									<div class="help">
+										<ul class="help_list">
+											<li>
+												<i>1</i>
+												<a href="" target="">微博注册操作指南</a>
+											</li>
+											<li>
+												<i>2</i>
+												<a href="" target="">注册时提示"你所使用的IP地址异常",该怎么办？</a>
+											</li>
+											<li>
+												<i>3</i>
+												<a href="" target="">企业用户希望使用的微博昵称不能注册怎么办？</a>
+											</li>
+											<li>
+												<i>4</i>
+												<a href="" target="">注册后，是否可以找回被其他人占用的企业昵称？</a>
+											</li>
+										</ul>
+										<a href="" class="help_more" target="">更多帮助»</a>
+									</div>
+				                </div>
+				      	    </div>
+				      	</div>
+				      	
+
+					   <!-- 底部 -->
+					   <div class="footer">
+							<div class="left_link">
+								<i class="f_logo"></i>
+								<em class="c_name">北京微梦创科网络技术有限公司</em>
+								<a href="">京网文[2011]0398-130号</a>
+								<a href="">京ICP备12002058号</a>
+
+							</div>
+							<div class="copy">
+								<span>Copyright © 2009-2016 WEIBO</span>
+								<select name="" id="language">
+									<option value="zh-cn" selected="selected">中文(简体)</option>
+									<option value="zh-tw">中文(台湾)</option>
+									<option value="zh-hk">中文(香港)</option>
+									<option value="en-us">English</option>
+								</select>
+							</div>
+					  </div>
+				</div>
+		   </div>
+		</div>
+	<script src="/project/Public/Home/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/project/Public/Home/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/project/Public/Home/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="/project/Public/Home/dist/js/sb-admin-2.js"></script>
+    <!-- form表单验证 -->
+    <script src="/project/Public/Home/js/home-form.min.js"></script>
+
+</body>
